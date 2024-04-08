@@ -258,6 +258,7 @@ const countryList = [
   "Åland Islands",
 ];
 
+// eslint-disable-next-line @typescript-eslint/no-misused-promises
 countryList.forEach(async (country) => {
   const term = country.toUpperCase();
   const terms: {
@@ -276,5 +277,7 @@ countryList.forEach(async (country) => {
     await redis.zadd("terms", ...terms);
   }
 
-  populateDb();
+  void populateDb().catch((error) => {
+    console.error("Error populating database:", error);
+  });
 });
