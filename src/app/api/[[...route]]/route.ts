@@ -58,4 +58,5 @@ app.get("/search", async (context) => {
 });
 
 export const GET = handle(app);
+export const POST = handle(app);
 export default app as never;
