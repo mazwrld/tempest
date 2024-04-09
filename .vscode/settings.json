@@ -9,5 +9,14 @@
     "**/node_modules": true,
     "**/.next": true
   },
-  "cSpell.words": ["Hono", "upstash", "zadd", "zrange", "zrank"]
+  "cSpell.words": [
+    "clsx",
+    "cmdk",
+    "Hono",
+    "tailwindcss",
+    "upstash",
+    "zadd",
+    "zrange",
+    "zrank"
+  ]
 }
